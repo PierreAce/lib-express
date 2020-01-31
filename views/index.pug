@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+    h1 Lib-Express
+    div
+    a(href= "/dashboard" class="btn btn-primary") Dashboard
+    div
+    table(class="table")
+        thead
+            tr
+            th(scope="col") Titre
+            th
+            th(scope="col") Modification
+            th(scope="col") Suppression
+            tr
+        thead
+    tbody
+        tr
+        th(scope="row") 1
+        td Mark
+        td Otto
+        td
+        button(class="btn btn-primary") Modifier
+        button(class="btn btn-primary") Supprimer
+
