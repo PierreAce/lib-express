@@ -5,5 +5,13 @@ block content
     div
     h2 Articles
     div
-    a(href= "/dashboard" class="btn btn-primary") Dashboard
+    a(href= "/dashboard" class="btn btn-primary") Création
     a(href= "/dashboard/category" class="btn btn-primary") Catégories
+    div
+    table(class="table")
+        tbody
+            each article in listArticles
+                tr
+                    td= article.title
+                        button(type="button" onClick= "" class= "btn btn-primary") Editer
+                            button(class= "btn btn-primary" onClick= "routes:article/articleDelete()") Supprimer

@@ -10,6 +10,7 @@
     "test": "echo 'Launching server in test mode'"
   },
   "dependencies": {
+    "bcrypt": "^3.0.8",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "cookie-parser": "~1.4.4",
